@@ -1,0 +1,66 @@
+.logo img{
+    width: 150px;
+}
+body{
+    background-color: #04274d;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 10px 30px rgb(0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #04274d;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 15px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+}
+.active{
+     box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);
+    border-bottom: 2px solid #d03173;
+}
+nav ul li a:hover{
+    box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);
+    border-bottom: 2px solid #d03173;
+}
+#content{
+   margin-top: 105px; 
+   color: aliceblue;
+   text-align: center;
+}
+.paper{
+    box-shadow: 5px 10px 30px ;
+    background-color:rgb(25, 9, 95);
+}
+.hy{
+    text-decoration: none;
+    color: red;
+     box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);     
+}
+hr{
+      box-shadow: 5px 10px 30px rgba(white 0.5);
+    border-bottom: 2px solid white;
+}
+p{
+text-decoration: solid;
+display: flex;
+}
+}
