@@ -56,8 +56,8 @@ nav ul li a:hover{
      box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);     
 }
 hr{
-      box-shadow: 5px 10px 30px rgba(white 0.5);
-    border-bottom: 2px solid white;
+     box-shadow: 5px 10px 30px rgba(white 0.5);
+    border-bottom: 2px solid white;    
 }
 p{
 text-decoration: solid;
@@ -65,7 +65,23 @@ display: flex;
 }
 
  .details{
-    text-align: center;
+}
+
+menu{
+    text-align: start;
+    position: fixed;
+    background-color: #0569d4;
+    line-height: 2em;
+    width:40%;
+}
+.malawi{
+    text-align: end;
+    line-height: 2em;
+    background-color: rgb(56, 0, 0);
+    width: 100%;
+    margin-left: 1%;
+    margin-right:0%;
+
     
-    
+
 }
