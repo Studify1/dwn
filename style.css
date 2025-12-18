@@ -69,21 +69,29 @@ display: flex;
 
 menu{
     text-align: start;
-    position: fixed;
     background-color: #0569d4;
     line-height: 2em;
     width:40%;
     border-radius: 1em;
-    
+    position: relative;
+    left:25%;
 }
 .malawi{
-    text-align: end;
+    position: relative;
+    left: 25%;
+    background-color: rgb(112, 176, 192 );
+    width: 40%;
     line-height: 2em;
-    background-color: rgb(56, 0, 0);
-    width: 100%;
-    margin-left: 1%;
-    margin-right:0%;
-
+    text-align: start;
+    padding: 2%;
+    border-radius: 1em;
     
-
+}
+a{text-decoration: none;
+}
+a:link{ color: blue;}
+a:active{ color: red;}
+#header{
+    color: whitesmoke;
+    text-align: center;
 }
