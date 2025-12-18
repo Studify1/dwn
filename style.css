@@ -86,6 +86,7 @@ menu{
     text-align: start;
     padding: 10%;
     border-radius: 1em;
+    display: flex;
     
 }
 a{text-decoration: none;
