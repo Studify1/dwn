@@ -75,6 +75,7 @@ menu{
     border-radius: 1em;
     position: relative;
     left:25%;
+    padding: 10%;
 }
 .malawi{
     position: relative;
@@ -83,7 +84,7 @@ menu{
     width: 40%;
     line-height: 2em;
     text-align: start;
-    padding: 2%;
+    padding: 10%;
     border-radius: 1em;
     
 }
