@@ -30,7 +30,7 @@ nav ul li a{
     color: white;
     font-weight: 500;
     text-decoration: none;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     display: flex;
 }
 .active{
@@ -95,4 +95,15 @@ a:active{ color: red;}
 #header{
     color: whitesmoke;
     text-align: center;
+}
+footer{ 
+    background-color: rgba(0, 0, 0, 0.055);
+    text-align: center;
+    background-color: rgba(20, 30, 56, 0.767);
+}
+.fs{
+      list-style: none;
+      display: inline;
+      word-spacing: 15px;
+
 }
