@@ -2,7 +2,7 @@
     width: 90px;
 }
 body{
-    background-color: #04274d;
+    background-color: white;
 }
 nav{
     display: flex;
@@ -43,21 +43,20 @@ nav ul li a:hover{
 }
 #content{
    margin-top: 105px; 
-   color: aliceblue;
+   color: black;
    text-align: center;
 }
 .paper{
     box-shadow: 5px 10px 30px ;
-    background-color:rgb(25, 9, 95);
+    background-color:rgb(220, 217, 231);
+    color: black;
+    
 }
 .hy{
     text-decoration: none;
-    color: red;
-     box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);     
+    color: red;    
 }
-hr{
-     box-shadow: 5px 10px 30px rgba(white 0.5);
-    border-bottom: 2px solid white;    
+   
 }
 p{
 text-decoration: solid;
@@ -93,17 +92,20 @@ a{text-decoration: none;
 a:link{ color: blue;}
 a:active{ color: red;}
 #header{
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 footer{ 
     background-color: rgba(0, 0, 0, 0.055);
     text-align: center;
     background-color: rgba(20, 30, 56, 0.767);
+    color: blue;
+
 }
 .fs{
       list-style: none;
       display: inline;
       word-spacing: 15px;
+      
 
 }
