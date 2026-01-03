@@ -1,77 +1,10 @@
-.logo img{
-    width: 90px;
-}
-body{
-    background-color: white;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 5px 10px 30px rgb(0, 0, 0.3);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: #04274d;
-}
-nav ul{
-    display: flex;
-    list-style: none;
-}
-nav ul li a{
-    height: 40px;
-    line-height: 43px;
-    margin: 3px;
-    padding: 0px 15px;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 1px;
-    display: flex;
-}
-.active{
-     box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);
-    border-bottom: 2px solid #d03173;
-}
-nav ul li a:hover{
-    box-shadow: 5px 10px 30px rgba(208, 49, 11, 0.5);
-    border-bottom: 2px solid #d03173;
-}
-#content{
-   margin-top: 105px; 
-   color: black;
-   text-align: center;
-}
-.paper{
-    box-shadow: 5px 10px 30px ;
-    background-color:rgb(220, 217, 231);
-    color: black;
-    
-}
-.hy{
-    text-decoration: none;
-    color: red;    
-}
-   
-}
-p{
-text-decoration: solid;
-display: flex;
-}
-
- .details{
-}
 
 menu{
     text-align: start;
     background-color: #0569d4;
     line-height: 2em;
     width:40%;
-    border-radius: 1em;
+    border-radius: 2em;
     position: relative;
     left:25%;
     padding: 10%;
@@ -95,17 +28,57 @@ a:active{ color: red;}
     color: black;
     text-align: center;
 }
-footer{ 
-    background-color: rgba(0, 0, 0, 0.055);
-    text-align: center;
-    background-color: rgba(20, 30, 56, 0.767);
-    color: blue;
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
 }
-.fs{
-      list-style: none;
-      display: inline;
-      word-spacing: 15px;
-      
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }

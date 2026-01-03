@@ -1,118 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>script demo</title>
+    <title>Navigation Bar</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css" />
-        <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css" />
 </head>
 <body>
-    <py-script src="pythonfile.py">
-<div id="output"></div>
-    </py-script>
-
- <section id="header">
-    <nav>
-        <a href="" class="logo">
-            <img src="img/logo.jpg" alt="">
-        </a>
-        <ul class="menu">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="papers.html">pastPapers</a></li>
-            <li><a href="pythonfile.py">books</a></li>
-            <li><a href="">notes</a></li>
-            <li><a href="">quaz</a></li>
+    <nav class="navbar">
+        <div class="logo"><a href="#">Studify01</a></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Past Papers</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Quizzes</a></li>
         </ul>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
- </section>
- 
- <section id="content"><button id="start-button">Start Now</button>
-
-   <h3>Studifry01 provides everything you need to study effectively. </h3>
-  <div class="paper">
-     <a href="papers.html" class="hy">PAST EXAM PAPERS</a>
-    <P>Practice with real JSCE and MSCE aram question from privious years to familiarize your self with the format and style of the tests</P><hr>
- </div> <hr>
- <div class="paper">
-    <a href="" class="hy">BOOKS</a>
-<P>These are official JS and MSCE secondary school textbooks that cover the full malawi syllabus</P><hr>
- </div><hr>
- <div  class="paper">
-   <a href="" class="hy">SUMMARY NOTES</a> 
-   <P>Summary notes are short, simplified notes that focus on the most important points in each topic.
-On Studify01, students get:
-Condensed notes for quick revision
-
-Easy-to-understand explanations
-
-Key formulas, definitions, and examples
-
-<Ul>
-Why they help:
-Summary notes save time when revising for exams. They help you remember key 
-points faster and make studying less stressful.</Ul>
-</P><hr>
- </div><hr>
- <div class="paper">
-    <a href="" class="hy">Solved Past Papers </a>
-    <p>Solved papers show you how to answer questions correctly using step-by-step explanations.
-Studify01 Premium includes:
-
-Detailed answers for past MSCE papers
-
-Easy-to-follow solutions written like a teacher
-
-Marking guide style explanations
-</p>
-<strong>Why they help:
-Solved papers teach you the correct method of answering MSCE questions. They show you what examiners expect and help you avoid common mistakes.
-<p>
-<hr>
- </div>
- <hr>
- <div class="paper">
-<a href=""class="hy">Quizzes</a>
-
-<p>
-Quizzes are short practice tests designed for each subject and topic.
-On Studify01, quizzes include:
-<ul style="list-style: none;">
-<li>tiple-choice questions (MCQs)</li>
-<li>Instant results and scores</li>
-<li>Explanation for correct answers</li>
-<li>Progress tracking to see improvement</li></ul>
-</p>
-<p>Why they help:
-Quizzes help you test yourself regularly. They improve your memory, help you identify weak areas, and make learning more fun and interactive.
-</p>
- </div>
- </section>
- <footer>
-    <ul class="ft">
-        <li class="fs"><a href="">Home</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href="">pastPapers</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href="">books</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href="">summaryNotes</a></li>
-     </ul>
-    <br>
-
- <ul class="ft">
-        <li class="fs"><a href="">AboutUs</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href=""> ContactUs</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href="">PrivacyPolicy</a></li>
-        <strong>|</strong>
-        <li class="fs"><a href="">Terms&Conditions</a></li>
-
-    </ul>
-    <param>2025 inc. All Rights Reserved</param>
- </footer>
+    <py-script src="pythonfile.py"></py-script>
 </body>
 </html>
