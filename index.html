@@ -8,7 +8,6 @@
         <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
 </head>
 <body>
-    <div id="output"></div>
     <nav class="navbar">
         <div class="logo"><a href="#">Studify01</a></div>
         <ul class="nav-links" id="nav-links">
@@ -19,9 +18,9 @@
             <li><a href="#">Quizzes</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
-            <div class="bar">home</div>
-            <div class="bar">class</div>
-            <div class="bar">okt</div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </nav>
     <div>
@@ -29,7 +28,8 @@
         <h2><a href="mada.html">Hello</a></h2>
         <a href="mada.html">GEOGRAPHY</a>
     </div>
-       <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js">
+      <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+    <py-script>
 
 from pyscript import Element, when
 
@@ -44,6 +44,6 @@ def close_menu(event):
     hamburger = Element("hamburger")
     if not nav_links.element.contains(event.target) and not hamburger.element.contains(event.target):
         nav_links.element.classList.remove("active")
-       </script>
+       </py-script>
 </body>
 </html>
