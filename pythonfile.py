@@ -1,9 +1,4 @@
-from pyscript import display, Element, when
+from pyscript import Element
 
-# Update a specific HTML element
-Element("output").write("Python is running!")
-
-# React to button clicks
-@when("click", "#my-button")
-def handle_click(event):
-    display("Button clicked!", target="output")
+# Display a welcome message in the HTML element with id="output"
+Element("output").write("Welcome to Studifry01! Start your study journey here.")
