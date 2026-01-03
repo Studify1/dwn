@@ -84,7 +84,8 @@ def display_question():
         output.write(f"<div class='option' id='option-{i}'>{option}</div>")
     
     for i in range(len(q["options"])):
-        Element(f"option-{i}").element.onclick = lambda event, idx=i: check_answer(idx)
+        btn = Element(f"option-{i}")
+        btn.add_event_listener("click", lambda event, idx=i: check_answer(idx))
 
 def check_answer(selected_index):
     global current_question, score
