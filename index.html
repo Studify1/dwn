@@ -23,7 +23,15 @@
             <div class="bar"></div>
         </div>
     </nav>
+       <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+    <py-script>
+from pyscript import Element, when
 
-    <py-script src="pythonfile.py"></py-script>
+@when("click", "#hamburger")
+def toggle(event):
+    nav = Element("nav-links")
+    nav.element.classList.toggle("active")
+    print("Toggled:", nav.element.classList)
+</py-script>
 </body>
 </html>
