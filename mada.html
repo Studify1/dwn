@@ -3,106 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz on Mada</title>
+    <title>Name Input</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
             background-color: #f4f4f4;
         }
-        .quiz-container {
-            max-width: 600px;
+        .container {
+            max-width: 400px;
             margin: 0 auto;
             background: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .question {
-            margin-bottom: 20px;
-        }
-        .option {
-            display: block;
+        input {
+            width: 100%;
             padding: 10px;
-            margin: 5px 0;
-            background: #e0e0e0;
-            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
             cursor: pointer;
         }
-        .option:hover {
-            background: #d0d0d0;
-        }
-        .result {
-            font-weight: bold;
-            font-size: 1.2em;
+        .output {
             margin-top: 20px;
+            font-weight: bold;
         }
     </style>
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.2/core.css" />
 </head>
 <body>
-    <div class="quiz-container">
-        <h2>Quiz on Mada</h2>
-        <button id="start-quiz">Start Quiz</button>
-        <div id="quiz-output"></div>
+    <div class="container">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="name-input" placeholder="Your name">
+        <button id="submit-button">Submit</button>
+        <div class="output" id="output"></div>
     </div>
 
     <script type="module" src="https://pyscript.net/releases/2025.11.2/core.js"></script>
     <py-script>
 from pyscript import Element, when
 
-# Quiz questions
-questions = [
-    {
-        "question": "What is the capital of Mada?",
-        "options": ["Madagascar", "Antananarivo", "Mumbai", "Nairobi"],
-        "answer": 1
-    },
-    {
-        "question": "What is the largest city in Mada?",
-        "options": ["Antananarivo", "Toamasina", "Mahajanga", "Fianarantsoa"],
-        "answer": 0
-    },
-    {
-        "question": "What is the official language of Mada?",
-        "options": ["French", "English", "Malagasy", "Spanish"],
-        "answer": 2
-    }
-]
-
-current_question = 0
-score = 0
-
-def display_question():
-    global current_question
-    q = questions[current_question]
-    output = Element("quiz-output")
-    output.clear()
-    output.write(f"<div class='question'>{q['question']}</div>")
-    
-    for i, option in enumerate(q["options"]):
-        output.write(f"<div class='option' id='option-{i}'>{option}</div>")
-    
-    for i in range(len(q["options"])):
-        btn = Element(f"option-{i}")
-        btn.add_event_listener("click", lambda event, idx=i: check_answer(idx))
-
-def check_answer(selected_index):
-    global current_question, score
-    correct = questions[current_question]["answer"] == selected_index
-    if correct:
-        score += 1
-    
-    current_question += 1
-    if current_question < len(questions):
-        display_question()
+@when("click", "#submit-button")
+def handle_submit(event):
+    name = Element("name-input").element.value.strip()
+    if name:
+        Element("output").write(f"Thank you, {name}!")
     else:
-        Element("quiz-output").write(f"<div class='result'>Quiz Complete! Your score: {score}/{len(questions)}</div>")
-
-@when("click", "#start-quiz")
-def start_quiz(event):
-    Element("start-quiz").element.style.display = "none"
-    display_question()
+        Element("output").write("Please enter your name.")
     </py-script>
 </body>
 </html>
